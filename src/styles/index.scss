@@ -1,5 +1,108 @@
-$body-color: blue;
+$body-color: black;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
 
 body {
+  background-color: rgb(199, 199, 199);
   color: $body-color;
+  font-family: montserrat;
+  text-align: left;
+  min-width: 320px;
+  padding: 2em 0em;
+  height: auto;
+}
+
+#containter{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2em;
+  max-width: 1000px;
+}
+
+h1{
+  text-align: center;
+  color: rgb(0, 153, 255);
+  margin-bottom: 0.5em;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 2em;
+  
+}
+
+input, select{
+  height: 30px;
+  margin-top: 0.5em;
+  margin-bottom: 2em; 
+}
+
+label{
+  display: block;
+  margin-right: 1em;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+  width: 70%;
+  max-width: 30em;
+}
+
+input[type="select"]{
+  width: 10em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: 3em;
+  height: 0em;
+  vertical-align: middle;
+}
+
+.divAnswer{
+  margin-top: 0.5em;
+}
+
+#comments{
+  height: 10em; 
+  width: 18em; 
+}
+
+#submit-button{
+  background-color: rgb(76, 127, 175); 
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2em auto;
+  width: 10em;
+  display: block;
+  height: auto;
+}
+
+@media (min-width: 580px){
+
+  input, select{
+    margin-top: 0em;
+  }
+  label{
+    display: inline-block;
+    vertical-align: top;
+  }
+  #containter{
+    text-align: right;
+  }
+  .divAnswer{
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+ 
 }
