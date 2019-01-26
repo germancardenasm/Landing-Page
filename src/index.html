@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>webpack starterkit</title>
-  <link rel="stylesheet" type="text/css" href="src\styles\index.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/index.scss">
+  
 </head>
 <body>
     <header>
@@ -15,13 +16,12 @@
       <p id="description">Let us know how we can improve freeCodeCamp</p>
     </div>
     <form id="survey-form">
-      
         <label id="name-label" for=name>Names:</label> 
-        <input type="text" id="names" name="name" placeholder="Enter you name"/><br>
+        <input type="text" id="name" name="name" placeholder="Enter you name" required/><br>
         <label id="number-label" for=age>Age:</label> 
         <input type="number" id="number" name="age" min="1" max="110" placeholder="Enter you age"/><br>
         <label id="email-label" for=email>Email:</label> 
-        <input type="email" id="email" name="email" placeholder="Enter you email"/><br>
+        <input type="email" id="email" name="email" placeholder="Enter you email" required/><br>
         <label for=current-rol>Which option best describes your current role?</label>
         <select id="dropdown" name="current-rol" placeholder="Select an Option">
             <option value="Student" disabled >Select An Option</option>
@@ -52,20 +52,21 @@
         <label for="toBeImproved">Things that should be improved in the future
             (Check all that apply): </label>
         <div class="divAnswer">
-        <input type="checkbox" name="toBeImproved">Front-End Projects<br>
-        <input type="checkbox" name="toBeImproved">Back-end Projects<br>
-        <input type="checkbox" name="toBeImproved">Data Visualization<br>
-        <input type="checkbox" name="toBeImproved">Challenges<br>
+        <input type="checkbox" name="Front-End Projects" value="Front-End Projects">Front-End Projects<br>
+        <input type="checkbox" name="Back-end Projects" value="Back-end Projects">Back-end Projects<br>
+        <input type="checkbox" name="Data Visualization" value="Data Visualization">Data Visualization<br>
+        <input type="checkbox" name="Challenges" value="Challenges">Challenges<br>
         </div><br>
 
         <label for="comments">Any Comments or Suggestions?</label>
-        <input type="textarea" id="comments" name="comments" placeholder="Enter your comments"/><br>
+        <textarea type="textarea" id="comments" name="comments" placeholder="Enter your comments"></textarea><br>
 
-        <input type="submit" id="submit-button"> 
+        <input type="submit" id="submit"> 
       
 
     </form>
   </div>
 <script src="src\scripts\index.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
