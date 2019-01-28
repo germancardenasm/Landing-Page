@@ -8,10 +8,19 @@ $body-color: black;
   margin: 0 auto;
 }
 
+#search-bar{
+  background-color: black;
+  height: 3em; 
+  text-align: right;
+  padding: 0.5em 4em;
+}
+input{
+  border-radius: 5px;
+}
+
 header{
   background-color:  rgb(49, 49, 49);
   color: white;
-  margin: 3em 0 0 0 ;
 }
 
 header img{
@@ -20,7 +29,7 @@ header img{
 
 nav{
   padding: 0 0 0.3vw 6vw;
-
+  background-color: black;
 }
 
 a{
