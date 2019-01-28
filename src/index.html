@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>webpack starterkit</title>
-    <link rel="stylesheet" type="text/css" href="src/styles/index.scss">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ESP INSTRUMENTS</title>
+        <link rel="stylesheet" type="text/css" href="src/styles/index.scss">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
     <body>
     <div id="container">
-  
         <header id="header" >
             <div id="search-bar">
                     <input type="search"  placeholder="Search" >
@@ -16,21 +16,22 @@
             </div>
             <img src="src/img/medium.png" alt="brand-logo" id="header-img">
         </header>
-    
-        <nav id="nav-bar" class="sticky"  >
+        <div id="nav-div" class="sticky">
+            <nav id="nav-bar"   >
                 <ul id="nav-list">
-                    <li class="nav-link"><a href="">BY CATEGORY</a></li>
-                    <li class="nav-link"><a href="">BY BRAND</a></li>
-                    <li class="nav-link"><a href="">FAQ</a></li>
-                    <li class="nav-link"><a href="">SUPPORT</a></li>
+                    <li class="nav-link" ><a href="">BY CATEGORY </a><i class="fas fa-angle-double-down"></i></li>
+                    <li class="nav-link"><a href="">BY INTRUMENT </a><i class="fas fa-angle-double-down"></i></li>
+                    <li class="nav-link"><a href="">SUPPORT </a><i class="fas fa-angle-double-down"></i></li>
+                    <li class="nav-link"><a href="">FAQ </a></li>
                 </ul>
             </nav>
-        <h1>Finnest Electric Guitars & Basses </h1>
+        </div>
+        <h1>ESP Finnest Electric Guitars & Basses </h1>
         <div id="main-img">
           <img class="resp-image center" src="src/img/original.jpg" alt="news-images">
         </div>
         <div id="main">
-     
+          <h2>News</h2>
             <div class="video-outer-frame center">
                 <div class="video-resp-container">  
                 <iframe id="video" class="video-resp"   src="https://www.youtube.com/embed/-bSyrzPjbuE" 
@@ -38,14 +39,46 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="video-outer-frame center">
-                    <div class="video-resp-container">  
-                    <iframe id="video2" class="video-resp"   src="https://www.youtube.com/embed/-bSyrzPjbuE" 
-                            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen></iframe>
-                    </div>
+            <h2>Category</h2>
+            <div class="section">
+                <div class="category-div">
+                    <img src="src/img/espOriginal.png" >
+                    <p class="category-legend"><strong>ESP Originals</strong></p>
                 </div>
-    
+                <div class="category-div">
+                        <img src="src/img/espII.png">
+                        <p class="category-legend"><strong>E-II GUITARS</strong></p>
+                </div>
+                <div class="category-div">
+                        <img src="src/img/espUSA.png" >
+                        <p class="category-legend"><strong>ESP USA</strong></p>
+                </div>
+                <div class="category-div">
+                        <img src="src/img/ltd.png" >
+                        <p class="category-legend"><strong>E-II GUITARS</strong></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <h2>Instrument</h2>
+            <div class="category-div">
+                <img src="src/img/espGuitars.png" >
+                <p class="category-legend"><strong>ESP GUITAR</strong></p>
+            </div>
+            <div class="category-div">
+                    <img src="src/img/ltdGuitars.png">
+                    <p class="category-legend"><strong>LTD GUTARS</strong></p>
+            </div>
+            <div class="category-div">
+                    <img src="src/img/espBasses.png" >
+                    <p class="category-legend"><strong>ESP BASSES</strong></p>
+            </div>
+            <div class="category-div">
+                    <img src="src/img/ltdBasses.png" >
+                    <p class="category-legend"><strong>LTD BASESS</strong></p>
+            </div>
+            <div class="clear"></div>
+
+
         </div>
     </div>
     <script src="src\scripts\index.js"></script>
